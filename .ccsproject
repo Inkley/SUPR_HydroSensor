@@ -8,6 +8,6 @@
 	<isElfFormat value="true"/>
 	<rts value="libc.a"/>
 	<createSlaveProjects value=""/>
-	<origin value="/Users/Tyler/Downloads/SUPR_HydroSensor-main"/>
+	<origin value="/Users/Tyler/Downloads/SUPR_HydroSensor"/>
 	<isTargetManual value="true"/>
 </projectOptions>
