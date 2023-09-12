@@ -1,0 +1,12 @@
+"./MCU_Sample_DIFF.obj"
+"./cmdline.obj"
+"./flash_pb.obj"
+"./random.obj"
+"./softuart.obj"
+"./spi_flash.obj"
+"./startup_ccs.obj"
+"./uartstdio.obj"
+"./ustdlib.obj"
+"../project_ccs.cmd"
+-llibc.a
+-l"/Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib"
