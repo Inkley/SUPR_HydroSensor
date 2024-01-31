@@ -7,68 +7,86 @@ CMD_SRCS += \
 ../project_ccs.cmd 
 
 C_SRCS += \
-../MCU_Sample_DIFF.c \
+../adc_functions.c \
 ../cmdline.c \
 ../flash_pb.c \
+../main.c \
 ../random.c \
 ../softuart.c \
 ../spi_flash.c \
 ../startup_ccs.c \
+../storage_functions.c \
+../uart_functions.c \
 ../uartstdio.c \
 ../ustdlib.c 
 
 C_DEPS += \
-./MCU_Sample_DIFF.d \
+./adc_functions.d \
 ./cmdline.d \
 ./flash_pb.d \
+./main.d \
 ./random.d \
 ./softuart.d \
 ./spi_flash.d \
 ./startup_ccs.d \
+./storage_functions.d \
+./uart_functions.d \
 ./uartstdio.d \
 ./ustdlib.d 
 
 OBJS += \
-./MCU_Sample_DIFF.obj \
+./adc_functions.obj \
 ./cmdline.obj \
 ./flash_pb.obj \
+./main.obj \
 ./random.obj \
 ./softuart.obj \
 ./spi_flash.obj \
 ./startup_ccs.obj \
+./storage_functions.obj \
+./uart_functions.obj \
 ./uartstdio.obj \
 ./ustdlib.obj 
 
 OBJS__QUOTED += \
-"MCU_Sample_DIFF.obj" \
+"adc_functions.obj" \
 "cmdline.obj" \
 "flash_pb.obj" \
+"main.obj" \
 "random.obj" \
 "softuart.obj" \
 "spi_flash.obj" \
 "startup_ccs.obj" \
+"storage_functions.obj" \
+"uart_functions.obj" \
 "uartstdio.obj" \
 "ustdlib.obj" 
 
 C_DEPS__QUOTED += \
-"MCU_Sample_DIFF.d" \
+"adc_functions.d" \
 "cmdline.d" \
 "flash_pb.d" \
+"main.d" \
 "random.d" \
 "softuart.d" \
 "spi_flash.d" \
 "startup_ccs.d" \
+"storage_functions.d" \
+"uart_functions.d" \
 "uartstdio.d" \
 "ustdlib.d" 
 
 C_SRCS__QUOTED += \
-"../MCU_Sample_DIFF.c" \
+"../adc_functions.c" \
 "../cmdline.c" \
 "../flash_pb.c" \
+"../main.c" \
 "../random.c" \
 "../softuart.c" \
 "../spi_flash.c" \
 "../startup_ccs.c" \
+"../storage_functions.c" \
+"../uart_functions.c" \
 "../uartstdio.c" \
 "../ustdlib.c" 
 

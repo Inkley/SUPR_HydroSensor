@@ -15,19 +15,23 @@ MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2
 MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
 MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h
 MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h
+MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h
+MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/time.h
+MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/abi_prefix.h
+MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_time.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/inc/hw_memmap.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/adc.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/debug.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/gpio.h
+MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/i2c.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/pin_map.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/rom.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/sysctl.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/uart.h
+MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/flash.h
+MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/eeprom.h
 MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/utils/uartstdio.h
-MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/time.h
-MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/abi_prefix.h
-MCU_Sample_DIFF.obj: /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_time.h
-MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/i2c.h
+MCU_Sample_DIFF.obj: ../uart_functions.h
 
 ../MCU_Sample_DIFF.c:
 
@@ -59,6 +63,14 @@ MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/i2c.h
 
 /Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h:
 
+/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h:
+
+/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/time.h:
+
+/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/abi_prefix.h:
+
+/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_time.h:
+
 /Users/Tyler/ti/tivaware_c_series_2_1_4_178/inc/hw_memmap.h:
 
 /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/adc.h:
@@ -66,6 +78,8 @@ MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/i2c.h
 /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/debug.h:
 
 /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/gpio.h:
+
+/Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/i2c.h:
 
 /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/pin_map.h:
 
@@ -75,13 +89,11 @@ MCU_Sample_DIFF.obj: /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/i2c.h
 
 /Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/uart.h:
 
+/Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/flash.h:
+
+/Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/eeprom.h:
+
 /Users/Tyler/ti/tivaware_c_series_2_1_4_178/utils/uartstdio.h:
 
-/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/time.h:
-
-/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/abi_prefix.h:
-
-/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_time.h:
-
-/Users/Tyler/ti/tivaware_c_series_2_1_4_178/driverlib/i2c.h:
+../uart_functions.h:
 

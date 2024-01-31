@@ -8,13 +8,16 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./MCU_Sample_DIFF.obj" \
+"./adc_functions.obj" \
 "./cmdline.obj" \
 "./flash_pb.obj" \
+"./main.obj" \
 "./random.obj" \
 "./softuart.obj" \
 "./spi_flash.obj" \
 "./startup_ccs.obj" \
+"./storage_functions.obj" \
+"./uart_functions.obj" \
 "./uartstdio.obj" \
 "./ustdlib.obj" \
 "../project_ccs.cmd" \
@@ -140,7 +143,7 @@ all: SUPR_HydroSensor.out
 SUPR_HydroSensor.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --preinclude="/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_timeval.h" --advice:power=all --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_TM4C123_RB1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"project_ccs.map" --heap_size=0 --stack_size=256 -i"/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SUPR_HydroSensor_linkInfo.xml" --rom_model -o "SUPR_HydroSensor.out" $(ORDERED_OBJS)
+	"/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --preinclude="/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_timeval.h" --advice:power="all" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_TM4C123_RB1 -g --gcc --printf_support=full --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"project_ccs.map" --heap_size=320 --stack_size=400 -i"/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/Applications/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SUPR_HydroSensor_linkInfo.xml" --rom_model -o "SUPR_HydroSensor.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
@@ -148,8 +151,8 @@ SUPR_HydroSensor.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "MCU_Sample_DIFF.obj" "cmdline.obj" "flash_pb.obj" "random.obj" "softuart.obj" "spi_flash.obj" "startup_ccs.obj" "uartstdio.obj" "ustdlib.obj" 
-	-$(RM) "MCU_Sample_DIFF.d" "cmdline.d" "flash_pb.d" "random.d" "softuart.d" "spi_flash.d" "startup_ccs.d" "uartstdio.d" "ustdlib.d" 
+	-$(RM) "adc_functions.obj" "cmdline.obj" "flash_pb.obj" "main.obj" "random.obj" "softuart.obj" "spi_flash.obj" "startup_ccs.obj" "storage_functions.obj" "uart_functions.obj" "uartstdio.obj" "ustdlib.obj" 
+	-$(RM) "adc_functions.d" "cmdline.d" "flash_pb.d" "main.d" "random.d" "softuart.d" "spi_flash.d" "startup_ccs.d" "storage_functions.d" "uart_functions.d" "uartstdio.d" "ustdlib.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
