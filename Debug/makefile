@@ -10,15 +10,16 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./adc_functions.obj" \
 "./cmdline.obj" \
+"./data_transfer_functions.obj" \
 "./flash_pb.obj" \
 "./main.obj" \
 "./random.obj" \
 "./softuart.obj" \
 "./spi_flash.obj" \
 "./startup_ccs.obj" \
-"./storage_functions.obj" \
 "./uart_functions.obj" \
 "./uartstdio.obj" \
+"./udma.obj" \
 "./ustdlib.obj" \
 "../project_ccs.cmd" \
 $(GEN_CMDS__FLAG) \
@@ -130,10 +131,10 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-SUPR_HydroSensor.out \
+SUPR_HydroSensor.out 
 
 EXE_OUTPUTS__QUOTED += \
-"SUPR_HydroSensor.out" \
+"SUPR_HydroSensor.out" 
 
 
 # All Target
@@ -151,8 +152,8 @@ SUPR_HydroSensor.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "adc_functions.obj" "cmdline.obj" "flash_pb.obj" "main.obj" "random.obj" "softuart.obj" "spi_flash.obj" "startup_ccs.obj" "storage_functions.obj" "uart_functions.obj" "uartstdio.obj" "ustdlib.obj" 
-	-$(RM) "adc_functions.d" "cmdline.d" "flash_pb.d" "main.d" "random.d" "softuart.d" "spi_flash.d" "startup_ccs.d" "storage_functions.d" "uart_functions.d" "uartstdio.d" "ustdlib.d" 
+	-$(RM) "adc_functions.obj" "cmdline.obj" "data_transfer_functions.obj" "flash_pb.obj" "main.obj" "random.obj" "softuart.obj" "spi_flash.obj" "startup_ccs.obj" "uart_functions.obj" "uartstdio.obj" "udma.obj" "ustdlib.obj" 
+	-$(RM) "adc_functions.d" "cmdline.d" "data_transfer_functions.d" "flash_pb.d" "main.d" "random.d" "softuart.d" "spi_flash.d" "startup_ccs.d" "uart_functions.d" "uartstdio.d" "udma.d" "ustdlib.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

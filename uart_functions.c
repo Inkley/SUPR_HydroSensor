@@ -13,23 +13,18 @@
 #include <time.h>
 
 // Tiva C Series libraries
-#include "inc/hw_memmap.h"
-#include "driverlib/adc.h"
-#include "driverlib/debug.h"
 #include "driverlib/gpio.h"
 #include "driverlib/pin_map.h"
-#include "driverlib/rom.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/uart.h"
+#include "inc/hw_memmap.h"
 #include "utils/uartstdio.h"
-
-// Custom project-specific headers (if any)
-#include "driverlib/i2c.h"
 
 //*****************************************************************************/
 // Sets up UART0 to display information to console
 //*****************************************************************************/
-void initConsole(void)
+void
+configureUART(void)
 {
         // Enable GPIO port A which is used for UART0 pins
         SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
@@ -61,9 +56,10 @@ void initConsole(void)
 }
 
 //*****************************************************************************/
-// User input function (uart polled)
+// User input function
 //*****************************************************************************/
-uint32_t GetUserInput(void)
+uint32_t
+getUserInput(void)
 {
     // Buffer to store user input as a string
     char userInput[16];

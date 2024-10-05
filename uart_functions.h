@@ -8,7 +8,7 @@
 #ifndef UART_FUNCTIONS_H_
 #define UART_FUNCTIONS_H_
 
-void initConsole(void);
-uint32_t GetUserInput(void);
+void configureUART(void);
+uint32_t getUserInput(void);
 
 #endif /* UART_FUNCTIONS_H_ */

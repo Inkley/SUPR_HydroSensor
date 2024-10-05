@@ -8,7 +8,7 @@
 #ifndef ADC_FUNCTIONS_H_
 #define ADC_FUNCTIONS_H_
 
-void configureADC(void);
-int getADC(void);
+void configureADC1(void);
+int startADC1(void);
 
 #endif /* ADC_FUNCTIONS_H_ */
